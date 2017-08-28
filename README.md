@@ -15,6 +15,10 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 1. Download the Server zip files at https://access.redhat.com
 2. Unzip it into the desired folder 
 3. For Postman, go to www.getpostman.com 
+4. For Red Hat JBoss Developer Studio, download the jar installer and run the following command:
+``` 
+$ java -jar devstudio-11.0.0.GA-installer-standalone.jar
+```
 
 ### Configuration and setup
 #### Red Hat JBoss EAP 
