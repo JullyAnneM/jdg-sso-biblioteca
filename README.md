@@ -1,7 +1,7 @@
 # Red Hat JBoss Data Grid + Single-Sign On with RESTful API
 
 ## Overview
-This project uses JBoss Data Grid to persist information sent through a RESTful API, authenticated with Red Hat Single-Sign On.
+This Maven Project uses JBoss Data Grid to persist information sent through a RESTful API, authenticated with Red Hat Single-Sign On.
 
 ## Prerequisites
 * Red Hat JBoss Enterprise Application Platform
