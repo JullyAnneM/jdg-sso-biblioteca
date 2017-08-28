@@ -78,8 +78,14 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 3. Make sure to change the path correctly in the settings.xml file.
 
 #### Red Hat Single-Sign On
-1.
-2.
-3.
+1. Boot the Server and open your browser at http://localhost:8080/auth. 
+2. Create a username/password and go to http://localhost:8080/auth/admin. 
+3. Log in with your new user.
+4. Go to Users and add a new one at `Add User`. This will be the user required to log into your jsp page.
+5. Change the password at `Credentials` and make sure the Temporary button is off.
+6. Go to Clients and click on `Create`.
+7. Set the id name as the same name of the application (in this case, data_grid-0.0.1-SNAPSHOT).
+8. Make sure that the URLs are all set to http instead of https. 
+9. Save it.
 
 ## Deployment 
