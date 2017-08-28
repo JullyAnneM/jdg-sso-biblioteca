@@ -26,11 +26,11 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 3. Expand Red Hat JBoss Middleware and choose JBoss Enterprise Application Platform 7.0. Enter a server name then click Next.
 2. Create a server adapter to manage starting and stopping the server. Keep the defaults and click Next.
 3. Enter a name, for example JBoss EAP 7.0 Runtime. Click Browse next to Home Directory and navigate to your JBoss EAP installation directory and then Finish.
-4. 
 
 #### Red Hat JBoss Data Grid
 1. Go to Maven ${user.home}/.m2/ directory.
-2. Check if theres a file named settings.xml. If not, create one and update it as follows:
+2. Check if theres a file named settings.xml. If not, create one. 
+3. Update the settings.xml file as follows:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -92,4 +92,5 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 9. Save it.
 
 ## Deployment 
-Right-click the jboss-helloworld project in the Project Explorer tab and select Run As → Run on Server.
+1. Import the project downloaded here. 
+2. Right-click the project in the Project Explorer tab and select `Run As → Run on Server`.
