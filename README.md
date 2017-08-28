@@ -20,14 +20,17 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 3. For Postman, go to www.getpostman.com and download it.
 
 ### Configuration and setup
-#### Red Hat JBoss EAP 
-1.
-2.
-3.
+#### Red Hat JBoss Developer Studio
+1. Open the Servers tab.
+2. Click on the `No servers are available. Click this link to create a new server..` link.
+3. Expand Red Hat JBoss Middleware and choose JBoss Enterprise Application Platform 7.0. Enter a server name then click Next.
+2. Create a server adapter to manage starting and stopping the server. Keep the defaults and click Next.
+3. Enter a name, for example JBoss EAP 7.0 Runtime. Click Browse next to Home Directory and navigate to your JBoss EAP installation directory and then Finish.
+4. 
 
 #### Red Hat JBoss Data Grid
 1. Go to Maven ${user.home}/.m2/ directory.
-2. Update the settings.xml file as follows:
+2. Check if theres a file named settings.xml. If not, create one and update it as follows:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -89,3 +92,4 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 9. Save it.
 
 ## Deployment 
+Right-click the jboss-helloworld project in the Project Explorer tab and select Run As → Run on Server.
