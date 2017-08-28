@@ -14,7 +14,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 ### Installation of all 
 1. Download the Server zip files at https://access.redhat.com
 2. Unzip it into the desired folder 
-3. For Postman, go to www.getpostman.com 
+3. For Postman, go to www.getpostman.com and download it
 4. For Red Hat JBoss Developer Studio, download the jar installer and right-click it selecting `Open With → Jar Launcher` (Mac/Windows) or run the following command (Linux):
 ``` 
 $ java -jar devstudio-11.0.0.GA-installer-standalone.jar
