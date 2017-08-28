@@ -104,10 +104,14 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 
 ## Commands using Postman instead of the jsp page: 
 * Persisting Data (make sure to set it to POST):
-``` http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/persist?titulo=Outlander&isbn=123456&autor=Diana ```
+``` 
+http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/persist?titulo=Outlander&isbn=123456&autor=Diana 
+```
 
 * Retrieving Data (make sure to set it to GET):
-``` http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/get?isbn=123456```
+``` 
+http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/get?isbn=123456
+```
 
 ## Useful links
 * Any trouble with installation and setup can be solved at https://access.redhat.com 
