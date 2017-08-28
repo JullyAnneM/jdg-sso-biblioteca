@@ -89,9 +89,21 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 6. Go to `Clients` and click on `Create`.
 7. Set the id name as the same name of the application (in this case, data_grid-0.0.1-SNAPSHOT).
 8. Make sure that the URLs are all set to `http` instead of `https`. 
-9. Save it.
+9. Go to the `Installation` tab and copy the generated adapter selecting `Keycloak OIDC JBoss Subsystem XML`. It will be similar to: 
+```
+<secure-deployment name="WAR MODULE NAME.war">
+    <realm>demo</realm>
+    <auth-server-url>http://localhost:8180/auth</auth-server-url>
+    <public-client>true</public-client>
+    <ssl-required>EXTERNAL</ssl-required>
+    <resource>data_grid-0.0.1-SNAPSHOT</resource>
+</secure-deployment>
 
-## Deployment 
+```
+10. Copy and paste it in JBoss Enterprise Application Platform standalone.xml file, at the Keycloak Subsystem tag.
+11. Replace the WAR MODULE NAME with the application name, in this case: data_grid-0.0.1-SNAPSHOT. Save it.
+
+## Standalone Deployment 
 1. Import the project downloaded here. 
 2. Right-click the project in the `Project Explorer` tab and select `Run As → Run on Server`.
 3. Boot the Data Grid Server with a different port using the following command: 
@@ -105,11 +117,13 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 ## Commands using Postman instead of the jsp page: 
 * Persisting Data (make sure to set it to POST):
 ``` 
+http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/persist?titulo={title}&isbn={isbn_number}&autor={autor}
 http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/persist?titulo=Outlander&isbn=123456&autor=Diana 
 ```
 
 * Retrieving Data (make sure to set it to GET):
 ``` 
+http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/get?isbn={isbn_number}
 http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/get?isbn=123456
 ```
 
