@@ -12,14 +12,24 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 
 ## Installation, configuration and setup
 ### Installation of all 
-1. Download the Server zip file at https://access.redhat.com
+1. Download the Server zip files at https://access.redhat.com
 2. Unzip it into the desired folder 
 3. For Postman, go to www.getpostman.com 
 
-### Red Hat JBoss EAP 
+### Configuration and setup
+#### Red Hat JBoss EAP 
+1.
+2.
+3.
 
-### Red Hat JBoss Data Grid
+#### Red Hat JBoss Data Grid
+1.
+2.
+3.
 
-### Red Hat Single-Sign On
+#### Red Hat Single-Sign On
+1.
+2.
+3.
 
 ## Deployment 
