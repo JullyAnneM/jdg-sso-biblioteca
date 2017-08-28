@@ -19,7 +19,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 2. Unzip them into the desired folder.
 3. For Postman, go to www.getpostman.com and download it.
 
-### Configuration and setup
+### Configuration
 #### Red Hat JBoss Developer Studio
 1. Open the Servers tab.
 2. Click on the `No servers are available. Click this link to create a new server..` link.
