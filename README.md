@@ -80,7 +80,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 #### Red Hat Single-Sign On
 1. Boot the Server and open your browser at http://localhost:8080/auth. 
 2. Create a username/password and go to http://localhost:8080/auth/admin. 
-3. Log in with your new user.
+3. Log in with your new admin user.
 4. Go to Users and add a new one at `Add User`. This will be the user required to log into your jsp page.
 5. Change the password at `Credentials` and make sure the Temporary button is off.
 6. Go to Clients and click on `Create`.
