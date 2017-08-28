@@ -10,7 +10,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 * Red Hat Single-Sign On
 * A browser or Postman API
 
-## Installation, configuration and setup
+## Installation and Configuration
 ### Installation of all 
 1. At https://access.redhat.com download: 
 * Server file for Red Hat JBoss Enterprise Application Platform, Data Grid and Single-Sign On.
@@ -114,7 +114,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 5. Go to `localhost:8080/data_grid-0.0.1-SNAPSHOT/api` and log in using the user created at the admin page of Single-Sign On.
 6. Persist the information desired and retrieve it.
 
-## Commands using Postman instead of the jsp page: 
+## Commands using Postman instead of the JSP page: 
 * Persisting Data (make sure to set it to POST):
 ``` 
 http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/persist?titulo={title}&isbn={isbn_number}&autor={autor}
