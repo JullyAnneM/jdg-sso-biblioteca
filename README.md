@@ -12,12 +12,11 @@ This Maven Project uses JBoss Data Grid to persist information sent through a RE
 
 ## Installation and Configuration
 ### Installation of all 
-1. At https://access.redhat.com download: 
+1. At https://access.redhat.com, download and unzip the following files into the desired folder: 
 * Server file for Red Hat JBoss Enterprise Application Platform, Data Grid and Single-Sign On.
 * Jar installer for JBoss Developer Studio.
 * Maven Repository for Red Hat JBoss Data Grid.
-2. Unzip them into the desired folder.
-3. For Postman, go to www.getpostman.com and download it.
+2. For Postman, go to www.getpostman.com and download it.
 
 ### Configuration
 #### Red Hat JBoss Developer Studio
