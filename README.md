@@ -8,7 +8,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 * Red Hat JBoss Developer Studio
 * Red Hat JBoss Data Grid
 * Red Hat Single-Sign On
-* A browser or Postman API (preferable)
+* A browser or Postman API
 
 ## Installation, configuration and setup
 ### Installation of all 
@@ -25,11 +25,11 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 2. Click on the `No servers are available. Click this link to create a new server..` link.
 3. Expand Red Hat JBoss Middleware and choose JBoss Enterprise Application Platform 7.0. Enter a server name then click Next.
 2. Create a server adapter to manage starting and stopping the server. Keep the defaults and click Next.
-3. Enter a name, for example JBoss EAP 7.0 Runtime. Click Browse next to Home Directory and navigate to your JBoss EAP installation directory and then Finish.
+3. Enter a name, for example JBoss EAP 7.0 Runtime. Click `Browse next to Home Directory` and navigate to your JBoss EAP installation directory, then click Finish.
 
 #### Red Hat JBoss Data Grid
-1. Go to Maven ${user.home}/.m2/ directory.
-2. Check if theres a file named settings.xml. If not, create one. 
+1. Go to Maven `${user.home}/.m2` directory.
+2. Check if theres a file named `settings.xml`. If not, create one. 
 3. Update the settings.xml file as follows:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -78,22 +78,22 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
    </activeProfiles>
 </settings>
 ```
-3. Make sure to change the path correctly in the settings.xml file.
+3. Make sure to change the path correctly in the settings.xml file to your Data Grid Server repository.
 
 #### Red Hat Single-Sign On
-1. Boot the Server and open your browser at http://localhost:8080/auth. 
+1. Boot the Server with `./standalone.sh` and open your browser at http://localhost:8080/auth. 
 2. Create a username/password and go to http://localhost:8080/auth/admin. 
 3. Log in with your new admin user.
-4. Go to Users and add a new one at `Add User`. This will be the user required to log into your jsp page.
+4. Go to `Users` and add a new one at `Add User`. This will be the user required to log into your jsp page.
 5. Change the password at `Credentials` and make sure the Temporary button is off.
-6. Go to Clients and click on `Create`.
+6. Go to `Clients` and click on `Create`.
 7. Set the id name as the same name of the application (in this case, data_grid-0.0.1-SNAPSHOT).
-8. Make sure that the URLs are all set to http instead of https. 
+8. Make sure that the URLs are all set to `http` instead of `https`. 
 9. Save it.
 
 ## Deployment 
 1. Import the project downloaded here. 
-2. Right-click the project in the Project Explorer tab and select `Run As → Run on Server`.
+2. Right-click the project in the `Project Explorer` tab and select `Run As → Run on Server`.
 3. Boot the Data Grid Server with a different port using the following command: 
 ```
 ./standalone.sh -Djboss.socket.binding.port-offset=OFFSET_NUMBER_HERE
