@@ -30,7 +30,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 #### Red Hat JBoss Data Grid
 1. Go to Maven `${user.home}/.m2` directory.
 2. Check if theres a file named `settings.xml`. If not, create one. 
-3. Update the settings.xml file as follows:
+3. Update the `settings.xml` file as follows:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -99,7 +99,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 ./standalone.sh -Djboss.socket.binding.port-offset=OFFSET_NUMBER_HERE
 ```
 4. Do the same with the Single-Sign On Server using another different port.
-5. Go to localhost:8080/data_grid-0.0.1-SNAPSHOT/api and log in using the user created at the admin page of Single-Sign On.
+5. Go to `localhost:8080/data_grid-0.0.1-SNAPSHOT/api` and log in using the user created at the admin page of Single-Sign On.
 6. Persist the information desired and retrieve it.
 
 ## Commands using Postman instead of the jsp page: 
