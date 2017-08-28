@@ -17,7 +17,7 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 * Jar installer for JBoss Developer Studio.
 * Maven Repository for Red Hat JBoss Data Grid.
 2. Unzip them into the desired folder.
-3. For Postman, go to www.getpostman.com and download it as you wish.
+3. For Postman, go to www.getpostman.com and download it.
 
 ### Configuration and setup
 #### Red Hat JBoss EAP 
@@ -26,9 +26,56 @@ This project uses JBoss Data Grid to persist information sent through a RESTful 
 3.
 
 #### Red Hat JBoss Data Grid
-1.
-2.
-3.
+1. Go to Maven ${user.home}/.m2/ directory.
+2. Update the settings.xml file as follows:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+   <profiles>
+      <profile>
+         <id>jboss-datagrid-repository</id>
+         <repositories>
+            <repository>
+               <id>jboss-datagrid-repository</id>
+               <name>JBoss Data Grid Maven Repository</name>
+               <url>file:///path/to/jboss-datagrid-7.0.0.GA-maven-repository/maven-repository</url>
+               <layout>default</layout>
+               <releases>
+                  <enabled>true</enabled>
+                  <updatePolicy>never</updatePolicy>
+               </releases>
+               <snapshots>
+                  <enabled>false</enabled>
+                  <updatePolicy>never</updatePolicy>
+               </snapshots>
+            </repository>
+         <pluginRepositories>
+            <pluginRepository>
+               <id>jboss-datagrid-repository</id>
+               <name>JBoss Data Grid Maven Repository</name>
+               <url>file:///path/to/jboss-datagrid-7.0.0.GA-maven-repository/maven-repository</url>
+               <layout>default</layout>
+               <releases>
+                  <enabled>true</enabled>
+                  <updatePolicy>never</updatePolicy>
+               </releases>
+               <snapshots>
+                  <enabled>false</enabled>
+                  <updatePolicy>never</updatePolicy>
+               </snapshots>
+            </pluginRepository>
+         </pluginRepositories>
+      </profile>
+   </profiles>
+   <activeProfiles>
+      <!-- make the profile active by default -->
+      <activeProfile>jboss-datagrid-repository</activeProfile>
+   </activeProfiles>
+</settings>
+```
+3. Make sure to change the path correctly in the settings.xml file.
 
 #### Red Hat Single-Sign On
 1.
