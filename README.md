@@ -114,4 +114,4 @@ http://localhost:8080/data_grid-0.0.1-SNAPSHOT/api/rest/get?isbn=123456
 ```
 
 ## Useful links
-* Any trouble with installation and setup can be solved at https://access.redhat.com 
+* Any trouble with installation and setup can be solved at https://access.redhat.com with the Documentation or Knowledgebase.
